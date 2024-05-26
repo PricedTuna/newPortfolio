@@ -4,3 +4,42 @@ img {
   padding: 0;
   margin: 0;
 }
+
+
+
+
+
+/* Projects styles */
+
+.project {
+  border: 40px solid pink;
+  border-radius: 30px;
+}
+/* Projectst border-color */
+.react {
+  border-color: #58c4dc;
+}
+
+.nestjs {
+  border-color: #d9224c;
+}
+
+.bootstrap {
+  border-color: #7410f0;
+}
+
+.net {
+  border-color: #5f08b0;
+}
+
+.html {
+  border-color: #dd4b25;
+}
+
+.javascript {
+  border-color: #efd81d;
+}
+
+.typescript {
+  border-color: #2c74c3;
+}

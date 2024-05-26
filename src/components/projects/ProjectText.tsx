@@ -1,23 +1,40 @@
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
+import GithubBtn from "./GithubBtn";
+import SiteBtn from "./SiteBtn";
 
-function ProjectText() {
+interface Props {
+  projectTitle: string;
+  projectContent: string;
+  technologies: JSX.Element[];
+  githubLink: string;
+  siteLink: string;
+  alignItemsEnd: boolean;
+}
 
+function ProjectText({
+  projectContent,
+  projectTitle,
+  technologies,
+  githubLink,
+  siteLink,
+  alignItemsEnd
+}: Props) {
   return (
     <>
-      <Box mb={1}>
-      <Typography variant="h4" textAlign="center" mb={1} >Este es el titulo del proyecto</Typography>
-      <Typography variant="subtitle1">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
-        molestiae ducimus iure? Consectetur earum soluta sapiente nostrum est
-        quisquam, laboriosam perspiciatis molestiae voluptatem fugiat sunt, quis
-        recusandae repellat voluptate facilis?
-      </Typography>
+      <Box mb={1} padding={1}>
+        <Typography variant="h5" textAlign="center" mb={1}>
+          {projectTitle}
+        </Typography>
+        <Typography variant="subtitle1" textAlign={{sx: "center", sm: "center", md: "center"}}>{projectContent}</Typography>
       </Box>
-      <Stack spacing={1} direction="row">
-      <Button variant="contained" size="medium" color="inherit">Github</Button>
-      <Button variant="contained" size="medium" color="primary">Site</Button>
+      <Stack spacing={1} direction="column" alignItems={{ xs: "center", sm: "center", md: "center", lg: alignItemsEnd ? "end" : "start" }}>
+      <Box>{technologies.map((tech) => tech)}</Box>
+        <Box>
+          <GithubBtn LinkTo={githubLink} />
+          <SiteBtn LinkTo={siteLink} />
+        </Box>
       </Stack>
-      </>
+    </>
   );
 }
 
