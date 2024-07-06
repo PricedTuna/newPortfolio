@@ -1,0 +1,15 @@
+.navItem {
+  color: rgb(184, 184, 184);
+  text-decoration: none;
+  transition: all 0.3s ease; /* Suaviza la transición */
+}
+
+.navItem:hover {
+  transform: scale(1.1);
+  color: lightgray;
+}
+
+.navFocus {
+  color: white;
+  transform: scale(1.3)!important;
+}
