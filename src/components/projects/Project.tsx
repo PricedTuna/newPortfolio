@@ -24,7 +24,7 @@ function Project({ github, mainTech, title, url }: ProjectInterface) {
         </Button>
         {url ? (
           <Button variant="contained" sx={{m: 0, py: 0.5}}>
-          <a href={github} style={{display: "flex", margin: 0, padding: 0}}><WebIcon sx={{color: "black", m: 0, p: 0}} /></a>
+          <a href={url} style={{display: "flex", margin: 0, padding: 0}}><WebIcon sx={{color: "black", m: 0, p: 0}} /></a>
         </Button>
         ) : (
           ""
