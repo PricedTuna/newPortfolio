@@ -96,7 +96,7 @@ const projects: ProjectInterface[] = [
 function ProjectsView() {
   return (
     <AnimateViewWrapper>
-      <Box>
+      <Box display="flex" flexDirection="column" gap={4.5}>
         {projects.map(({ title, github, mainTech, url }) => (
           <Project title={title} github={github} mainTech={mainTech} url={url} />
         ))}

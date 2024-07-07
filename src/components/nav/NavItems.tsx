@@ -44,7 +44,7 @@ function NavItems() {
             }`}
             key={option.path}
           >
-            <Typography sx={{fontSize: {xs: "0.8rem", sm: "0.8rem", md: "1.3rem", lg: "1.3rem", xl: "1.3rem"}, textShadow: "2px 2px 2px black"}}>
+            <Typography sx={{fontSize: {xs: "1rem", sm: "1rem", md: "1.3rem", lg: "1.3rem", xl: "1.3rem"}, textShadow: "2px 2px 2px black"}}>
               {option.title}
             </Typography>
           </Link>
