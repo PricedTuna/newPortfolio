@@ -5,7 +5,7 @@ function Background({children}: PropsWithChildren) {
   return (
     <Box
       sx={{
-        backgroundImage: "url(assets/bg_video.webp)",
+        backgroundImage: "url(./assets/bg_video.webp)",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         height: "100%",
