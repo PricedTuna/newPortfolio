@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import AnimateViewWrapper from "../components/animation/AnimateViewWrapper";
 import Project from "../components/projects/Project";
+import BaseText from "../components/text/BaseText";
 
 export type TechType =
   | "Stack web"
@@ -97,6 +98,9 @@ function ProjectsView() {
   return (
     <AnimateViewWrapper>
       <Box display="flex" flexDirection="column" gap={4.5}>
+        <Box>
+          <BaseText text="Some projects cannot be publicly displayed due to confidentiality agreements and privacy policies." sx={{fontWeight: "300", fontSize: "1rem", textAlign: "center"}} />
+        </Box>
         {projects.map(({ title, github, mainTech, url }) => (
           <Project title={title} github={github} mainTech={mainTech} url={url} />
         ))}

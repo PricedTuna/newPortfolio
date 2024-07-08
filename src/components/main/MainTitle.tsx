@@ -22,7 +22,7 @@ function MainTitle({secToSwapScreens, textAnimationDuration, titleInScreen}: Pro
             transition={{ duration: textAnimationDuration }}
             style={{color: "white", fontWeight: "100", fontSize: "2rem", whiteSpace: "nowrap", overflow: "hidden", borderRight: "1px solid white"}}
           >
-            Edgar Vega
+            Edgar Vega Portfolio
           </motion.span>
         </Box>
       </motion.div>
