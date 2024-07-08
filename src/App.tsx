@@ -1,8 +1,11 @@
 import Router from "./router/Router";
+import { Box } from "@mui/material";
 
 function App() {
   return (
-    <Router />    
+    <Box>
+      <Router />    
+    </Box>
   );
 }
 
