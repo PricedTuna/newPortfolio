@@ -11,7 +11,8 @@ export type TechType =
   | "NestJs"
   | "JavaScript"
   | "TypeScript"
-  | "MongoDB";
+  | "MongoDB"
+  | "Spring boot";
 
 export interface ProjectInterface {
   title: string;
@@ -21,6 +22,11 @@ export interface ProjectInterface {
 }
 
 const projects: ProjectInterface[] = [
+  {
+    title: "ToDo spring",
+    github: "https://github.com/PricedTuna/spring-todo",
+    mainTech: "Spring boot",
+  },
   {
     title: "Banchido",
     github: "https://github.com/PricedTuna/banchido",
