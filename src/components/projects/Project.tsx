@@ -11,7 +11,7 @@ function Project({ github, mainTech, title, url }: ProjectInterface) {
       display="flex"
       flexDirection={{xs: "column", sm: "column", md: "row", lg: "row", xl: "row"}}
       alignItems="center"
-      justifyContent="start"
+      justifyContent="center"
       gap={1}
     >
       <Box display="flex" alignItems="center" gap={2}>

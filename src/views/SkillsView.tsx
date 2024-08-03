@@ -15,6 +15,41 @@ interface category {
 
 const skillsCategorys: category[] = [
   {
+    name: "Backend",
+    skills: [
+      {
+        title: "Java",
+      },
+      {
+        title: "Spring boot",
+      },
+      {
+        title: "C#",
+      },
+      {
+        title: ".NET",
+      },
+      {
+        title: "PHP",
+      },
+      {
+        title: "Codeigniter",
+      },
+      {
+        title: "Keycloak",
+      },
+      {
+        title: "TypeScript",
+      },
+      {
+        title: "NestJs",
+      },
+      {
+        title: "Express",
+      },
+    ],
+  },
+  {
     name: "Frontend",
     skills: [
       {
@@ -40,35 +75,6 @@ const skillsCategorys: category[] = [
       },
       {
         title: "Tailwind",
-      },
-    ],
-  },
-  {
-    name: "Backend",
-    skills: [
-      {
-        title: "Keycloak",
-      },
-      {
-        title: "TypeScript",
-      },
-      {
-        title: "NestJs",
-      },
-      {
-        title: "Express",
-      },
-      {
-        title: "C#",
-      },
-      {
-        title: ".NET",
-      },
-      {
-        title: "PHP",
-      },
-      {
-        title: "Codeigniter",
       },
     ],
   },
