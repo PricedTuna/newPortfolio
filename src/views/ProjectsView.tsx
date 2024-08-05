@@ -23,6 +23,11 @@ export interface ProjectInterface {
 
 const projects: ProjectInterface[] = [
   {
+    title: "study cards (fastcards)",
+    github: "https://github.com/PricedTuna/fastCard-spboot",
+    mainTech: "Spring boot",
+  },
+  {
     title: "ToDo spring",
     github: "https://github.com/PricedTuna/spring-todo",
     mainTech: "Spring boot",
