@@ -29,7 +29,7 @@ function MainLayout() {
         initial={{ opacity: 0, display: "none" }}
         animate={{ opacity: 1, display: "block" }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 1, delay: secToSwapScreens }}
+        transition={{ duration: 2, delay: secToSwapScreens }}
       >
         <Background>
           <Box
