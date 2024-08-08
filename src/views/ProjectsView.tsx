@@ -12,7 +12,8 @@ export type TechType =
   | "JavaScript"
   | "TypeScript"
   | "MongoDB"
-  | "Spring boot";
+  | "Spring boot"
+  | "Laravel";
 
 export interface ProjectInterface {
   title: string;
@@ -22,6 +23,11 @@ export interface ProjectInterface {
 }
 
 const projects: ProjectInterface[] = [
+  {
+    title: "ToDo laravel",
+    github: "https://github.com/PricedTuna/todo-laravel",
+    mainTech: "Laravel",
+  },
   {
     title: "study cards (fastcards)",
     github: "https://github.com/PricedTuna/fastCard-spboot",
