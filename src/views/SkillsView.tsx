@@ -33,6 +33,9 @@ const skillsCategorys: category[] = [
         title: "PHP",
       },
       {
+        title: "Laravel",
+      },
+      {
         title: "Codeigniter",
       },
       {
