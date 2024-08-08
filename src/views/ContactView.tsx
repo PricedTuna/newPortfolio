@@ -18,7 +18,7 @@ function ContactView() {
         <LinkButton
           color="inherit"
           title="Linkedin"
-          link="www.linkedin.com/in/edgarvegaruiz"
+          link="https://linkedin.com/in/edgarvegaruiz"
         >
           <LinkedInIcon style={{ color: "black" }} />
         </LinkButton>
