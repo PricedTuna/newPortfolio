@@ -24,6 +24,11 @@ export interface ProjectInterface {
 
 const projects: ProjectInterface[] = [
   {
+    title: "Regymen laravel",
+    github: "https://github.com/PricedTuna/regymen-laravel",
+    mainTech: "Laravel",
+  },
+  {
     title: "ToDo laravel",
     github: "https://github.com/PricedTuna/todo-laravel",
     mainTech: "Laravel",
