@@ -18,12 +18,6 @@ const skillsCategorys: category[] = [
     name: "Backend",
     skills: [
       {
-        title: "Java",
-      },
-      {
-        title: "Spring boot",
-      },
-      {
         title: "C#",
       },
       {
