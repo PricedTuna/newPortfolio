@@ -13,34 +13,37 @@ export type TechType =
   | "TypeScript"
   | "MongoDB"
   | "Spring boot"
-  | "Laravel";
+  | "Laravel"
+  | "Codeigniter"
+  | "Mobile and web"
+  | "Mobile, web and microservices";
 
 export interface ProjectInterface {
   title: string;
-  github: string;
+  github?: string;
   url?: string;
   mainTech: TechType;
 }
 
 const projects: ProjectInterface[] = [
   {
-    title: "Regymen laravel",
-    github: "https://github.com/PricedTuna/regymen-laravel",
-    mainTech: "Laravel",
+    title: "Pear (CONFIDENTIAL)",
+    github: "",
+    mainTech: "Mobile, web and microservices",
   },
   {
-    title: "ToDo laravel",
-    github: "https://github.com/PricedTuna/todo-laravel",
-    mainTech: "Laravel",
+    title: "FastDocs (CONFIDENTIAL)",
+    github: "",
+    mainTech: "Codeigniter",
+  },
+  {
+    title: "EmpleaTracker (CONFIDENTIAL)",
+    github: "",
+    mainTech: "Mobile and web",
   },
   {
     title: "study cards (fastcards)",
     github: "https://github.com/PricedTuna/fastCard-spboot",
-    mainTech: "Spring boot",
-  },
-  {
-    title: "ToDo spring",
-    github: "https://github.com/PricedTuna/spring-todo",
     mainTech: "Spring boot",
   },
   {
@@ -62,51 +65,16 @@ const projects: ProjectInterface[] = [
     mainTech: "MongoDB",
   },
   {
-    title: "RNative Exercise",
-    github: "https://github.com/PricedTuna/Unicorns-practice",
-    mainTech: "React Native",
-  },
-  {
-    title: "To Do Web CRUD",
-    github: "https://github.com/PricedTuna/ToDoListWeb",
-    url: "https://heroic-queijadas-174d27.netlify.app/",
-    mainTech: "JavaScript",
-  },
-  {
     title: "Movie Land",
     github: "https://github.com/PricedTuna/MovieLand",
     url: "https://fluffy-cactus-f13494.netlify.app/",
     mainTech: "TypeScript",
   },
   {
-    title: "Bootstrap exercise",
-    github: "https://github.com/PricedTuna/NewsLetter",
-    url: "https://taupe-raindrop-39c264.netlify.app/",
-    mainTech: "Bootstrap",
-  },
-  {
-    title: "Bootstrap exercise 2",
-    github: "https://github.com/PricedTuna/product",
-    url: "https://gregarious-selkie-0539ad.netlify.app/",
-    mainTech: "Bootstrap",
-  },
-  {
-    title: "Bootstrap exercise 3",
-    github: "https://github.com/PricedTuna/qr-challenge",
-    url: "https://bright-rugelach-5f4838.netlify.app/",
-    mainTech: "Bootstrap",
-  },
-  {
     title: "Alura Barber",
     github: "https://github.com/PricedTuna/Alura-barber",
     url: "https://fantastic-starlight-e1f938.netlify.app/",
     mainTech: "Stack web",
-  },
-  {
-    title: "Web Calculator",
-    github: "https://github.com/PricedTuna/calculadora",
-    url: "https://cheerful-pegasus-fad1b9.netlify.app/",
-    mainTech: "JavaScript",
   },
   {
     title: "Weather cite",

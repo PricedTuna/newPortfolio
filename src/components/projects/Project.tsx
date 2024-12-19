@@ -9,7 +9,13 @@ function Project({ github, mainTech, title, url }: ProjectInterface) {
     <Box
       key={title}
       display="flex"
-      flexDirection={{xs: "column", sm: "column", md: "row", lg: "row", xl: "row"}}
+      flexDirection={{
+        xs: "column",
+        sm: "column",
+        md: "row",
+        lg: "row",
+        xl: "row",
+      }}
       alignItems="center"
       justifyContent="center"
       gap={1}
@@ -19,15 +25,17 @@ function Project({ github, mainTech, title, url }: ProjectInterface) {
         <BaseText sx={{ fontWeight: 300, fontSize: "1.5rem" }} text={title} />
       </Box>
       <Box display="flex" alignItems="center" gap={1}>
-        <Button
-          variant="contained"
-          color="inherit"
-          sx={{ bgcolor: "darkgray", m: 0, py: 0.5 }}
-        >
-          <a href={github} style={{ display: "flex", margin: 0, padding: 0 }}>
-            <GitHubIcon sx={{ color: "black", m: 0, p: 0 }} />
-          </a>
-        </Button>
+        {github && (
+          <Button
+            variant="contained"
+            color="inherit"
+            sx={{ bgcolor: "darkgray", m: 0, py: 0.5 }}
+          >
+            <a href={github} style={{ display: "flex", margin: 0, padding: 0 }}>
+              <GitHubIcon sx={{ color: "black", m: 0, p: 0 }} />
+            </a>
+          </Button>
+        )}
         {url ? (
           <Button
             variant="contained"
