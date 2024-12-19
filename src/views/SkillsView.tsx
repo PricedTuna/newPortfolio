@@ -105,6 +105,9 @@ const skillsCategorys: category[] = [
         title: "Teamwork",
       },
       {
+        title: "Microservices",
+      },
+      {
         title: "Communication",
       },
       {
