@@ -36,7 +36,7 @@ function Project({ github, mainTech, title, url }: ProjectInterface) {
             </a>
           </Button>
         )}
-        {url ? (
+        {url && (
           <Button
             variant="contained"
             sx={{ bgcolor: "#101861", m: 0, py: 0.5 }}
@@ -45,8 +45,6 @@ function Project({ github, mainTech, title, url }: ProjectInterface) {
               <WebIcon sx={{ color: "lightgray", m: 0, p: 0 }} />
             </a>
           </Button>
-        ) : (
-          ""
         )}
       </Box>
     </Box>

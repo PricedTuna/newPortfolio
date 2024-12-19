@@ -35,11 +35,9 @@ function MainLayout() {
           <Box
             p={3}
             bgcolor="rgba(0, 0, 0, 0.6)"
-            sx={{ height: "100vh", backdropFilter: "blur(20px)" }}
+            sx={{ height: "100vh" }}
           >
-            <Background>
-              <MainContainer />
-            </Background>
+            <MainContainer />
           </Box>
         </Background>
       </motion.div>

@@ -22,6 +22,7 @@ function MainContainer() {
       sx={{
         height: "100%",
         maxheight: "100%",
+        backdropFilter: "blur(5px)", // Aplica un filtro de desenfoque
       }}
     >
       <Box
