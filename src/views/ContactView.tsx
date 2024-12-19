@@ -1,9 +1,9 @@
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Box } from "@mui/material";
 import AnimateViewWrapper from "../components/animation/AnimateViewWrapper";
 import LinkButton from "../components/LinkButton";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 
 function ContactView() {
   return (
@@ -31,7 +31,7 @@ function ContactView() {
         </LinkButton>
         <LinkButton
           color="inherit"
-          title="Gmail"
+          title="edgarevegar04@gmail.com"
           link="mailto:edgarevegar04@gmail.com"
         >
           <AlternateEmailIcon style={{ color: "black" }} />
