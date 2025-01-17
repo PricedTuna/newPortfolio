@@ -40,7 +40,7 @@ function Project({
         </Box>
       </Button>
 
-      <Modal open={open} onClose={handleClose}>
+      <Modal open={open} onClose={handleClose} sx={{color: "white"}}>
         <Box
           sx={{
             position: "absolute",
@@ -48,10 +48,11 @@ function Project({
             left: "50%",
             transform: "translate(-50%, -50%)",
             width: 400,
-            bgcolor: "background.paper",
+            bgcolor: "#3b3b3b",
             boxShadow: 24,
             p: 4,
             borderRadius: 2,
+            color: "white"
           }}
         >
           <Typography variant="h5" gutterBottom>
@@ -67,17 +68,18 @@ function Project({
             <Typography variant="subtitle2">Technologies:</Typography>
             <Box display="flex" flexWrap="wrap" gap={1} mt={1}>
               {allTechs.map((tech, index) => (
-                <Chip key={index} label={tech} variant="outlined" />
+                <Chip color="info" key={index} label={tech} variant="outlined" />
               ))}
             </Box>
           </Box>
 
-          <Box display="flex" justifyContent="flex-end" gap={1} mt={3}>
+          <Box display="flex" gap={1} mt={3}>
             {github && (
               <Button
                 variant="contained"
                 color="inherit"
                 sx={{ bgcolor: "darkgray" }}
+                fullWidth
                 href={github}
                 target="_blank"
               >
@@ -88,6 +90,7 @@ function Project({
               <Button
                 variant="contained"
                 sx={{ bgcolor: "#101861" }}
+                fullWidth
                 href={url}
                 target="_blank"
               >
