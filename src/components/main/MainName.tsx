@@ -5,7 +5,7 @@ function MainName() {
   return (
     <>
       <PageTitle text="Edgar Vega" />
-      <PageMiniText text="Web Developer Fullstack" />
+      <PageMiniText text="Fullstack software developer" />
     </>
   );
 }

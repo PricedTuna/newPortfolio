@@ -1,53 +1,103 @@
-import { Box, Button } from "@mui/material";
-import { ProjectInterface } from "../../views/ProjectsView";
+import { Box, Button, Modal, Typography, Chip } from "@mui/material";
+import { useState } from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WebIcon from "@mui/icons-material/Web";
+import { ProjectInterface } from "../../views/ProjectsView";
 import BaseText from "../text/BaseText";
 
-function Project({ github, mainTech, title, url }: ProjectInterface) {
+interface Props {
+  project: ProjectInterface;
+}
+
+function Project({
+  project: { allTechs, description, mainTech, title, github, url },
+}: Props) {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
-    <Box
-      key={title}
-      display="flex"
-      flexDirection={{
-        xs: "column",
-        sm: "column",
-        md: "row",
-        lg: "row",
-        xl: "row",
-      }}
-      alignItems="center"
-      justifyContent="center"
-      gap={1}
-    >
-      <Box display="flex" alignItems="center" gap={2}>
-        <BaseText sx={{ fontWeight: 100, fontSize: "1rem" }} text={mainTech} />
-        <BaseText sx={{ fontWeight: 300, fontSize: "1.5rem" }} text={title} />
-      </Box>
-      <Box display="flex" alignItems="center" gap={1}>
-        {github && (
-          <Button
-            variant="contained"
-            color="inherit"
-            sx={{ bgcolor: "darkgray", m: 0, py: 0.5 }}
-          >
-            <a href={github} style={{ display: "flex", margin: 0, padding: 0 }}>
-              <GitHubIcon sx={{ color: "black", m: 0, p: 0 }} />
-            </a>
-          </Button>
-        )}
-        {url && (
-          <Button
-            variant="contained"
-            sx={{ bgcolor: "#101861", m: 0, py: 0.5 }}
-          >
-            <a href={url} style={{ display: "flex", margin: 0, padding: 0 }}>
-              <WebIcon sx={{ color: "lightgray", m: 0, p: 0 }} />
-            </a>
-          </Button>
-        )}
-      </Box>
-    </Box>
+    <>
+      <Button
+        variant="outlined"
+        onClick={handleOpen}
+        sx={{
+          borderColor: "white", // Cambia el color del borde
+          color: "white", // Cambia el color del texto si es necesario
+          "&:hover": {
+            borderColor: "white", // Mantén el color del borde en el hover
+            backgroundColor: "rgba(255, 255, 255, 0.1)", // Fondo opcional al hacer hover
+          },
+        }}
+      >
+        <Box display="flex" flexDirection="column" alignItems="center">
+          <BaseText sx={{ fontWeight: 300, fontSize: "1.5rem" }} text={title} />
+          <BaseText
+            sx={{ fontWeight: 100, fontSize: "1rem" }}
+            text={mainTech}
+          />
+        </Box>
+      </Button>
+
+      <Modal open={open} onClose={handleClose}>
+        <Box
+          sx={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: 400,
+            bgcolor: "background.paper",
+            boxShadow: 24,
+            p: 4,
+            borderRadius: 2,
+          }}
+        >
+          <Typography variant="h5" gutterBottom>
+            {title}
+          </Typography>
+          <Typography variant="subtitle1" gutterBottom>
+            Main Tech: {mainTech}
+          </Typography>
+          <Typography variant="body1" gutterBottom>
+            {description}
+          </Typography>
+          <Box mt={2}>
+            <Typography variant="subtitle2">Technologies:</Typography>
+            <Box display="flex" flexWrap="wrap" gap={1} mt={1}>
+              {allTechs.map((tech, index) => (
+                <Chip key={index} label={tech} variant="outlined" />
+              ))}
+            </Box>
+          </Box>
+
+          <Box display="flex" justifyContent="flex-end" gap={1} mt={3}>
+            {github && (
+              <Button
+                variant="contained"
+                color="inherit"
+                sx={{ bgcolor: "darkgray" }}
+                href={github}
+                target="_blank"
+              >
+                <GitHubIcon sx={{ color: "black" }} />
+              </Button>
+            )}
+            {url && (
+              <Button
+                variant="contained"
+                sx={{ bgcolor: "#101861" }}
+                href={url}
+                target="_blank"
+              >
+                <WebIcon sx={{ color: "lightgray" }} />
+              </Button>
+            )}
+          </Box>
+        </Box>
+      </Modal>
+    </>
   );
 }
 

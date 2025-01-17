@@ -11,7 +11,7 @@ function ContactView() {
       <Box
         display="flex"
         flexDirection="column"
-        alignItems="start"
+        alignItems="end"
         justifyContent="space-around"
         gap={3}
       >
