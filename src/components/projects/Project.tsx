@@ -1,7 +1,9 @@
-import { Box, Button, Modal, Typography, Chip } from "@mui/material";
-import { useState } from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WebIcon from "@mui/icons-material/Web";
+import { Box, Button, Chip, Modal, Typography } from "@mui/material";
+import { useState } from "react";
+import { useTranslate } from "../../hooks/useTranslate";
+import { LanguageLastKeys } from "../../language/i18n";
 import { ProjectInterface } from "../../views/ProjectsView";
 import BaseText from "../text/BaseText";
 
@@ -12,6 +14,7 @@ interface Props {
 function Project({
   project: { allTechs, description, mainTech, title, github, url },
 }: Props) {
+  const { getTranslation } = useTranslate();
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(true);
@@ -40,7 +43,7 @@ function Project({
         </Box>
       </Button>
 
-      <Modal open={open} onClose={handleClose} sx={{color: "white"}}>
+      <Modal open={open} onClose={handleClose} sx={{ color: "white" }}>
         <Box
           sx={{
             position: "absolute",
@@ -52,23 +55,28 @@ function Project({
             boxShadow: 24,
             p: 4,
             borderRadius: 2,
-            color: "white"
+            color: "white",
           }}
         >
           <Typography variant="h5" gutterBottom>
             {title}
           </Typography>
           <Typography variant="subtitle1" gutterBottom>
-            Main Tech: {mainTech}
+            {getTranslation("projectKey.mainTech")}: {mainTech}
           </Typography>
           <Typography variant="body1" gutterBottom>
-            {description}
+            {getTranslation(`projects.${description}` as LanguageLastKeys)}
           </Typography>
           <Box mt={2}>
-            <Typography variant="subtitle2">Technologies:</Typography>
+            <Typography variant="subtitle2">{getTranslation("projectKey.technologies")}:</Typography>
             <Box display="flex" flexWrap="wrap" gap={1} mt={1}>
               {allTechs.map((tech, index) => (
-                <Chip color="info" key={index} label={tech} variant="outlined" />
+                <Chip
+                  color="info"
+                  key={index}
+                  label={tech}
+                  variant="outlined"
+                />
               ))}
             </Box>
           </Box>

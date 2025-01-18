@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import AnimateViewWrapper from "../components/animation/AnimateViewWrapper";
 import Project from "../components/projects/Project";
 import BaseText from "../components/text/BaseText";
+import { useTranslate } from "../hooks/useTranslate";
 
 export type TechType =
   | "Stack web"
@@ -28,7 +29,7 @@ export interface ProjectInterface {
 const projects: ProjectInterface[] = [
   {
     "title": "(CONFIDENTIAL) Pear",
-    "description": "A confidential project. This is a microservices architecture solution with a mobile, web and desktop apps, in development yet, this is a international level solution.",
+    "description": "(CONFIDENTIAL) Pear",
     "allTechs": ["Stack web", "React", "React Native", "SQL database", "Microservices", "NestJs"],
     "mainTech": "Microservices",
     "github": "",
@@ -36,7 +37,7 @@ const projects: ProjectInterface[] = [
   },
   {
     "title": "(CONFIDENTIAL) Balanza fizcal",
-    "description": "A confidential project. This is a finance management and taxes calculator wich works in private enterprises and operate at national level (México)",
+    "description": "(CONFIDENTIAL) Balanza fizcal",
     "allTechs": ["Stack web", "React", "TypeScript"],
     "mainTech": "React",
     "github": "",
@@ -44,7 +45,7 @@ const projects: ProjectInterface[] = [
   },
   {
     "title": "IS time clocker (frontend)",
-    "description": "A page to registry the hourary for your employees, entry hour and aout hour with categories and excel reports.",
+    "description": "IS time clocker (frontend)",
     "allTechs": ["React", "TypeScript", "Stack web"],
     "mainTech": "React",
     "github": "https://github.com/PricedTuna/isfront",
@@ -52,7 +53,7 @@ const projects: ProjectInterface[] = [
   },
   {
     "title": "IS time clocker (backend)",
-    "description": "The backend for 'IS time clocker (back)'",
+    "description": "IS time clocker (backend)",
     "allTechs": ["NestJs", "TypeScript", "SQL database"],
     "mainTech": "NestJs",
     "github": "https://github.com/PricedTuna/rrhhback",
@@ -60,7 +61,7 @@ const projects: ProjectInterface[] = [
   },
   {
     "title": "Uas documents",
-    "description": "A page to simulate the digitalization and automatization the process to solicitate documents in all the university, you can registry and solicitate the aviable documents",
+    "description": "Uas documents",
     "allTechs": ["Stack web", "TypeScript", "React", "NoSQL database"],
     "mainTech": "React",
     "github": "https://github.com/PricedTuna/milipage",
@@ -68,7 +69,7 @@ const projects: ProjectInterface[] = [
   },
   {
     "title": "Banchido (frontend)",
-    "description": "A page to test 'Banchido', the digital bank for the 'Facultad de ingeniería' in the UAS, this is the frontend for all the project, you can do all the tasks like in any other digital bank",
+    "description": "Banchido (frontend)",
     "allTechs": ["Stack web", "TypeScript", "React"],
     "mainTech": "React",
     "github": "https://github.com/PricedTuna/banchido",
@@ -76,7 +77,7 @@ const projects: ProjectInterface[] = [
   },
   {
     "title": "Banchido (backend)",
-    "description": "The backend for the 'Banchido' project",
+    "description": "Banchido (backend)",
     "allTechs": ["NestJs", "NoSQL database", "TypeScript"],
     "mainTech": "NestJs",
     "github": "https://github.com/PricedTuna/banChidoBack",
@@ -84,7 +85,7 @@ const projects: ProjectInterface[] = [
   },
   {
     "title": "Financeculator",
-    "description": "A page to calculate all the finance operations to check the viability in the time for any project, this will help you to know if is a rentable and sustainable project",
+    "description": "Financeculator",
     "allTechs": ["Stack web", "TypeScript", "React"],
     "mainTech": "React",
     "github": "https://github.com/PricedTuna/CalcIngFinanciera",
@@ -92,7 +93,7 @@ const projects: ProjectInterface[] = [
   },
   {
     "title": "Weathere cite",
-    "description": "A simple weather cite to practice how to fetch an API and practice promises in Javascript, this page changes his bg color respect the temperature of the city fetched (blue: cold, yellow: hot)",
+    "description": "Weathere cite",
     "allTechs": ["Stack web"],
     "mainTech": "Stack web",
     "github": "https://github.com/PricedTuna/werather_cite",
@@ -100,7 +101,7 @@ const projects: ProjectInterface[] = [
   },
   {
     "title": "Movie land",
-    "description": "A page to save all your favorites movies (its saved in local storage) and search some movies",
+    "description": "Movie land",
     "allTechs": ["Stack web", "TypeScript"],
     "mainTech": "TypeScript",
     "github": "https://github.com/PricedTuna/MovieLand",
@@ -108,7 +109,7 @@ const projects: ProjectInterface[] = [
   },
   {
     "title": "Inguntos",
-    "description": "A web page to test the 'Operaciones de conjuntos' in a simple way",
+    "description": "Inguntos",
     "allTechs": ["Stack web"],
     "mainTech": "Stack web",
     "github": "https://github.com/PricedTuna/conjuntosOperations",
@@ -116,7 +117,7 @@ const projects: ProjectInterface[] = [
   },
   {
     "title": "ToDoList (local storage)",
-    "description": "A simple to do list with all tasks saved in local storage",
+    "description": "ToDoList (local storage)",
     "allTechs": ["Stack web", "TypeScript", "Bootstrap"],
     "mainTech": "TypeScript",
     "github": "https://github.com/PricedTuna/ToDoListWeb",
@@ -124,7 +125,7 @@ const projects: ProjectInterface[] = [
   },
   {
     "title": "ToDoList (cache)",
-    "description": "A simple to do list with all tasks saved in cache",
+    "description": "ToDoList (cache)",
     "allTechs": ["Stack web", "Bootstrap"],
     "mainTech": "Stack web",
     "github": "https://github.com/PricedTuna",
@@ -132,7 +133,7 @@ const projects: ProjectInterface[] = [
   },
   {
     "title": "frontend-mentor QR",
-    "description": "A simple challenge from frontend-mentor",
+    "description": "frontend-mentor QR",
     "allTechs": ["Stack web", "Bootstrap"],
     "mainTech": "Stack web",
     "github": "https://github.com/PricedTuna",
@@ -140,7 +141,7 @@ const projects: ProjectInterface[] = [
   },
   {
     "title": "frontend-mentor Product card",
-    "description": "A simple challenge from frontend-mentor",
+    "description": "frontend-mentor Product card",
     "allTechs": ["Stack web", "Bootstrap"],
     "mainTech": "Stack web",
     "github": "https://github.com/PricedTuna",
@@ -148,7 +149,7 @@ const projects: ProjectInterface[] = [
   },
   {
     "title": "Alura barber page",
-    "description": "A simple page for a barber, created in the 'Alura Oracle Next Education' project.",
+    "description": "Alura barber page",
     "allTechs": ["Stack web"],
     "mainTech": "Stack web",
     "github": "https://github.com/PricedTuna/Alura-barber",
@@ -157,11 +158,13 @@ const projects: ProjectInterface[] = [
 ]
 
 function ProjectsView() {
+  const { getTranslation } = useTranslate();
+
   return (
     <AnimateViewWrapper>
       <Box display="flex" flexDirection="column" gap={4.5}>
         <Box>
-          <BaseText text="Some projects cannot be publicly displayed due to confidentiality agreements and privacy policies." sx={{fontWeight: "300", fontSize: "1rem", textAlign: "center"}} />
+          <BaseText text={getTranslation("projectKey.confidentialText")} sx={{fontWeight: "300", fontSize: "1rem", textAlign: "center"}} />
         </Box>
         {projects.map((project) => (
           <Project project={project} />

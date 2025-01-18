@@ -1,4 +1,5 @@
 import { Stack, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 
 type listOptionsType = {
@@ -8,7 +9,7 @@ type listOptionsType = {
 
 const listOptions: listOptionsType = [
   {
-    title: "About me",
+    title: "AboutMe",
     path: "/about",
   },
   {
@@ -25,16 +26,25 @@ const listOptions: listOptionsType = [
   },
 ];
 
+
+
 function NavItems() {
+  const { t } = useTranslation();
   const location = useLocation();
 
   return (
     <nav>
       <Stack
-        direction={{xs: "column", sm: "row", md: "column", lg: "column", xl: "column"}}
+        direction={{
+          xs: "column",
+          sm: "row",
+          md: "column",
+          lg: "column",
+          xl: "column",
+        }}
         justifyContent="flex-start"
         alignItems="flex-start"
-        spacing={3}
+        spacing={2}
       >
         {listOptions.map((option) => (
           <Link
@@ -44,8 +54,19 @@ function NavItems() {
             }`}
             key={option.path}
           >
-            <Typography sx={{fontSize: {xs: "1rem", sm: "1rem", md: "1.3rem", lg: "1.3rem", xl: "1.3rem"}, textShadow: "2px 2px 2px black"}}>
-              {option.title}
+            <Typography
+              sx={{
+                fontSize: {
+                  xs: "1rem",
+                  sm: "1rem",
+                  md: "1.3rem",
+                  lg: "1.3rem",
+                  xl: "1.3rem",
+                },
+                textShadow: "2px 2px 2px black",
+              }}
+            >
+              {t(`sections.${option.title}`)}
             </Typography>
           </Link>
         ))}

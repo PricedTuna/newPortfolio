@@ -1,0 +1,37 @@
+{
+  "subTitle": "Desarrollador fullstack",
+  "sections": {
+    "AboutMe": "Sobre mi",
+    "Skills": "Habilidades",
+    "Projects": "Proyectos",
+    "Contact": "Contacto"
+  },
+  "about": {
+    "text1": "Amo tres cosas en este mundo: el arte de píxeles, los juegos de Pokémon y resolver problemas.",
+    "text2": "Soy Edgar Vega, un ingeniero de software mexicano. Comencé mi carrera a los 15 años, aprendiendo algoritmos. Ahora soy un desarrollador de software full-stack, especializado en desarrollo web y móvil con React y React Native en el front-end, y NestJS y C# en el back-end.",
+    "text3": "Esta página muestra todos los proyectos en los que he trabajado, desde el comienzo de mi trayectoria hasta hoy. ¡Échales un vistazo y dime qué opinas! :p"
+  },
+  "projects": {
+    "(CONFIDENTIAL) Pear": "Un proyecto confidencial. Esta es una solución de arquitectura de microservicios con aplicaciones móviles, web y de escritorio, aún en desarrollo. Es una solución a nivel internacional.",
+    "(CONFIDENTIAL) Balanza fizcal": "Un proyecto confidencial. Este es un administrador financiero y calculadora de impuestos que funciona en empresas privadas y opera a nivel nacional (México).",
+    "IS time clocker (frontend)": "Una página para registrar el horario de tus empleados, la hora de entrada y salida, con categorías y reportes en Excel.",
+    "IS time clocker (backend)": "El backend para 'IS time clocker (frontend)'.",
+    "Uas documents": "Una página para simular la digitalización y automatización del proceso de solicitud de documentos en toda la universidad. Puedes registrarte y solicitar los documentos disponibles.",
+    "Banchido (frontend)": "Una página para probar 'Banchido', el banco digital de la 'Facultad de Ingeniería' en la UAS. Este es el frontend para todo el proyecto, permitiéndote realizar todas las tareas como en cualquier otro banco digital.",
+    "Banchido (backend)": "El backend para el proyecto 'Banchido'.",
+    "Financeculator": "Una página para calcular todas las operaciones financieras y verificar la viabilidad a lo largo del tiempo de cualquier proyecto. Esto te ayudará a determinar si es un proyecto rentable y sostenible.",
+    "Weathere cite": "Un sitio simple para practicar cómo hacer fetch a una API y trabajar con promesas en JavaScript. Esta página cambia el color de fondo según la temperatura de la ciudad obtenida (azul: frío, amarillo: calor).",
+    "Movie land": "Una página para guardar todas tus películas favoritas (se guardan en el almacenamiento local) y buscar películas.",
+    "Inguntos": "Una página web para probar 'Operaciones de conjuntos' de forma sencilla.",
+    "ToDoList (local storage)": "Una lista de tareas simple con todas las tareas guardadas en el almacenamiento local.",
+    "ToDoList (cache)": "Una lista de tareas simple con todas las tareas guardadas en caché.",
+    "frontend-mentor QR": "Un desafío simple de Frontend Mentor.",
+    "frontend-mentor Product card": "Un desafío simple de Frontend Mentor.",
+    "Alura barber page": "Una página simple para una barbería, creada en el proyecto 'Alura Oracle Next Education'."
+  },
+  "projectKey": {
+    "mainTech": "Tech principal",
+    "technologies": "tecnologías",
+    "confidentialText": "Algunos proyectos no pueden mostrarse públicamente debido a acuerdos de confidencialidad y políticas de privacidad."
+  }
+}

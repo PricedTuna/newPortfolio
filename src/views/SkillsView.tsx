@@ -18,19 +18,13 @@ const skillsCategorys: category[] = [
     name: "Backend",
     skills: [
       {
+        title: "NestJs",
+      },
+      {
         title: "C#",
       },
       {
         title: ".NET",
-      },
-      {
-        title: "PHP",
-      },
-      {
-        title: "Laravel",
-      },
-      {
-        title: "Codeigniter",
       },
       {
         title: "Keycloak",
@@ -38,29 +32,11 @@ const skillsCategorys: category[] = [
       {
         title: "TypeScript",
       },
-      {
-        title: "NestJs",
-      },
-      {
-        title: "Express",
-      },
     ],
   },
   {
     name: "Frontend",
     skills: [
-      {
-        title: "HTML",
-      },
-      {
-        title: "CSS",
-      },
-      {
-        title: "JavaScript",
-      },
-      {
-        title: "TypeScript",
-      },
       {
         title: "React",
       },
@@ -73,48 +49,37 @@ const skillsCategorys: category[] = [
       {
         title: "Tailwind",
       },
+      {
+        title: "TypeScript",
+      },
+      {
+        title: "HTML",
+      },
+      {
+        title: "CSS",
+      },
+      {
+        title: "JavaScript",
+      },
     ],
   },
   {
     name: "Databases",
     skills: [
       {
+        title: "MongoDB",
+      },
+      {
+        title: "Firebase",
+      },
+      {
         title: "MySql",
       },
       {
-        title: "MariaDb",
+        title: "PostgreSql",
       },
       {
         title: "SqlServer",
-      },
-      {
-        title: "MongoDb",
-      },
-    ],
-  },
-  {
-    name: "Soft skills",
-    skills: [
-      {
-        title: "Teamwork",
-      },
-      {
-        title: "Microservices",
-      },
-      {
-        title: "Communication",
-      },
-      {
-        title: "Problem-solving",
-      },
-      {
-        title: "Adaptability",
-      },
-      {
-        title: "Critical thinking",
-      },
-      {
-        title: "Collaboration",
       },
     ],
   },

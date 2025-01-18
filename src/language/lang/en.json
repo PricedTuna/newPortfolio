@@ -1,0 +1,37 @@
+{
+  "subTitle": "Fullstack software developer",
+  "sections": {
+    "AboutMe": "About Me",
+    "Skills": "Skills",
+    "Projects": "Projects",
+    "Contact": "Contact"
+  },
+  "about": {
+    "text1": "I love three things in this world: pixel art, Pokémon games, and solving problems.",
+    "text2": "I'm Edgar Vega, a Mexican software engineer. I started my career at 15, learning algorithms. Now, I am a full-stack software developer, specializing in web and mobile development with React and React Native on the front end, and NestJS and C# on the back end.",
+    "text3": "This page showcases all the projects I have worked on, from the beginning of my journey to today. Check them out and let me know what you think! :p"
+  },
+  "projects": {
+    "(CONFIDENTIAL) Pear": "A confidential project. This is a microservices architecture solution with a mobile, web and desktop apps, in development yet, this is an international level solution.",
+    "(CONFIDENTIAL) Balanza fizcal": "A confidential project. This is a finance management and taxes calculator which works in private enterprises and operates at a national level (México).",
+    "IS time clocker (frontend)": "A page to register the hourly schedule for your employees, entry hour and out hour with categories and Excel reports.",
+    "IS time clocker (backend)": "The backend for 'IS time clocker (frontend)'.",
+    "Uas documents": "A page to simulate the digitalization and automation of the process to request documents in the entire university. You can register and request the available documents.",
+    "Banchido (frontend)": "A page to test 'Banchido', the digital bank for the 'Facultad de Ingeniería' in the UAS. This is the frontend for the entire project, allowing you to perform all tasks like any other digital bank.",
+    "Banchido (backend)": "The backend for the 'Banchido' project.",
+    "Financeculator": "A page to calculate all the financial operations to check the viability over time for any project. This will help you determine if it is a profitable and sustainable project.",
+    "Weathere cite": "A simple weather site to practice how to fetch an API and work with promises in JavaScript. This page changes its background color based on the temperature of the city fetched (blue: cold, yellow: hot).",
+    "Movie land": "A page to save all your favorite movies (saved in local storage) and search for movies.",
+    "Inguntos": "A web page to test 'Set Operations' in a simple way.",
+    "ToDoList (local storage)": "A simple to-do list with all tasks saved in local storage.",
+    "ToDoList (cache)": "A simple to-do list with all tasks saved in cache.",
+    "frontend-mentor QR": "A simple challenge from Frontend Mentor.",
+    "frontend-mentor Product card": "A simple challenge from Frontend Mentor.",
+    "Alura barber page": "A simple page for a barber, created in the 'Alura Oracle Next Education' project."
+  },
+  "projectKey": {
+    "mainTech": "Main tech",
+    "technologies": "technologies",
+    "confidentialText": "Some projects cannot be publicly displayed due to confidentiality agreements and privacy policies."
+  }
+}
