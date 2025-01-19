@@ -31,7 +31,7 @@ function ContactView() {
         </LinkButton>
         <LinkButton
           color="inherit"
-          title="edgarevegar04@gmail.com"
+          title="email"
           link="mailto:edgarevegar04@gmail.com"
         >
           <AlternateEmailIcon style={{ color: "black" }} />

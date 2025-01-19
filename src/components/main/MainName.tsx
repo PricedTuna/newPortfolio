@@ -56,7 +56,6 @@ function MainName() {
                     selectedLanguage === lang.code ? "#888" : "#333", // Efecto hover
                 },
                 borderRadius: "16px", // Bordes redondeados estilo "pill"
-                padding: "4px 8px", // Espaciado interno personalizado
               }}
               onClick={() => handleLanguageChange(lang.code)}
             />

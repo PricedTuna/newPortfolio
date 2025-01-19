@@ -42,11 +42,17 @@ function MainContainer() {
         </Box>
         <Box
           p={1}
-          ml={2}
+          ml={{
+            xs: 0,
+            sm: 0,
+            md: 0,
+            lg: 4,
+            xl: 4,
+          }}
           display="flex"
           justifyContent={{
-            xs: "center",
-            sm: "center",
+            xs: "start",
+            sm: "start",
             md: "start",
             lg: "start",
             xl: "start",
