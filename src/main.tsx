@@ -4,12 +4,14 @@ import App from './App.tsx'
 
 import './style/index.css'
 
-import { CssBaseline } from '@mui/material';
-
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import theme from "./theme.ts";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <CssBaseline />
-    <App />
+    <ThemeProvider theme={theme}>
+      <CssBaseline/>
+      <App/>
+    </ThemeProvider>
   </React.StrictMode>,
 )

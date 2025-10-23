@@ -3,6 +3,8 @@ import AnimateViewWrapper from "../components/animation/AnimateViewWrapper";
 import Project from "../components/projects/Project";
 import BaseText from "../components/text/BaseText";
 import { useTranslate } from "../hooks/useTranslate";
+import { useState } from "react";
+import { ProjectModal } from "./components/ProjectModal.tsx";
 
 export type TechType =
   | "Stack web"
@@ -159,17 +161,38 @@ const projects: ProjectInterface[] = [
 
 function ProjectsView() {
   const { getTranslation } = useTranslate();
+  const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
+  const [projectSelected, setProjectSelected] = useState<ProjectInterface>()
+
+  const handleOnClose = () => setIsProjectModalOpen(false);
+
+  const handleOnClickProject = (project: ProjectInterface) => {
+    setProjectSelected(project);
+    setIsProjectModalOpen(true);
+  }
 
   return (
     <AnimateViewWrapper>
-      <Box display="flex" flexDirection="column" gap={4.5}>
+      <Box display="flex" flexDirection="column">
         <Box>
-          <BaseText text={getTranslation("projectKey.confidentialText")} sx={{fontWeight: "300", fontSize: "1rem", textAlign: "center"}} />
+          <BaseText
+            text={getTranslation("projectKey.confidentialText")}
+            sx={{ fontWeight: "300", fontSize: "1rem", textAlign: "center" }}
+          />
         </Box>
-        {projects.map((project) => (
-          <Project project={project} />
-        ))}
+
+        <Box
+          display="flex"
+          flexDirection="column"
+          gap={2}
+        >
+          {projects.map((project) => (
+            <Project project={project} onCLickProject={handleOnClickProject}/>
+          ))}
+        </Box>
       </Box>
+
+      <ProjectModal project={projectSelected} isOpen={isProjectModalOpen} onClose={handleOnClose}/>
     </AnimateViewWrapper>
   );
 }

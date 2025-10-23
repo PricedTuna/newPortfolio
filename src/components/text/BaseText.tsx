@@ -8,7 +8,7 @@ interface Props {
 
 function BaseText({text, sx}: Props) {
   return (
-    <Typography color="white" sx={{textShadow: "2px 2px 2px black", ...sx}}>{text}</Typography>
+    <Typography fontWeight={'normal'} color="white" sx={{textShadow: "2px 2px 2px black", ...sx}}>{text}</Typography>
   )
 }
 

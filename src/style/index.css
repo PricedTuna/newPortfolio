@@ -5,7 +5,7 @@ body {
 .navItem {
   color: rgb(184, 184, 184);
   text-decoration: none;
-  transition: all 0.3s ease; /* Suaviza la transición */
+  transition: all 0.3s ease;
 }
 
 .navItem:hover {

@@ -20,10 +20,6 @@ const listOptions: listOptionsType = [
     title: "Projects",
     path: "/projects",
   },
-  {
-    title: "Contact",
-    path: "/contact",
-  },
 ];
 
 

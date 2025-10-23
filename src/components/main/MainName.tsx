@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useTranslate } from "../../hooks/useTranslate";
 import PageMiniText from "../text/PageMiniText";
 import PageTitle from "../text/PageTitle";
+import ContactButtons from "../../views/components/ContactButtons.tsx";
 
 const languages = [
   { code: "en", label: "English" },
@@ -23,11 +24,15 @@ function MainName() {
 
   return (
     <>
-      <Box>
-        <PageTitle text="Edgar Vega" />
-        <PageMiniText text={getTranslation("subTitle")} />
+      <Box display={'flex'} flexDirection={'column'}>
+        <Box>
+          <PageTitle text="Edgar Vega"/>
+          <PageMiniText text={getTranslation("subTitle")}/>
+        </Box>
+        <ContactButtons/>
       </Box>
-      <Box mt={2}>
+
+      <Box mt={8}>
         <Stack
           direction={{
             xs: "row",
@@ -48,14 +53,14 @@ function MainName() {
               clickable
               sx={{
                 backgroundColor:
-                  selectedLanguage === lang.code ? "#fff" : "transparent", // Verde y gris
-                color: selectedLanguage === lang.code ? "#000" : "#fff", // Texto blanco o negro
-                fontWeight: "normal", // Negrita para el seleccionado
+                  selectedLanguage === lang.code ? "#fff" : "transparent",
+                color: selectedLanguage === lang.code ? "#000" : "#fff",
+                fontWeight: "normal",
                 "&:hover": {
                   backgroundColor:
-                    selectedLanguage === lang.code ? "#888" : "#333", // Efecto hover
+                    selectedLanguage === lang.code ? "#888" : "#333",
                 },
-                borderRadius: "16px", // Bordes redondeados estilo "pill"
+                borderRadius: "16px",
               }}
               onClick={() => handleLanguageChange(lang.code)}
             />

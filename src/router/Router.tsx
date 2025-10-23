@@ -3,7 +3,7 @@ import AboutView from '../views/AboutView'
 import MainLayout from '../layout/MainLayout'
 import SkillsView from '../views/SkillsView'
 import ProjectsView from '../views/ProjectsView'
-import ContactView from '../views/ContactView'
+import ContactButtons from '../views/components/ContactButtons.tsx'
 
 const router = createBrowserRouter([
   {
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <ContactView />
+        element: <ContactButtons />
       }
     ]
   },

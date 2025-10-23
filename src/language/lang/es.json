@@ -3,8 +3,7 @@
   "sections": {
     "AboutMe": "Sobre mi",
     "Skills": "Habilidades",
-    "Projects": "Proyectos",
-    "Contact": "Contacto"
+    "Projects": "Proyectos"
   },
   "about": {
     "text1": "Amo tres cosas en este mundo: el cine de animación, los juegos de Pokémon y resolver problemas.",
