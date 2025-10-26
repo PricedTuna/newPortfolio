@@ -33,7 +33,7 @@ function NavItems() {
       <Stack
         direction={{
           xs: "column",
-          sm: "row",
+          sm: "column",
           md: "column",
           lg: "column",
           xl: "column",

@@ -18,7 +18,7 @@ function MainContainer() {
         xl: "row",
       }}
       bgcolor="rgba(0,0,0,0.3)"
-      border="1px solid gray"
+      border="2px solid gray"
       sx={{
         height: "100%",
         maxheight: "100%",
@@ -62,6 +62,7 @@ function MainContainer() {
           <NavItems />
         </Box>
       </Box>
+      
       <Box
         alignSelf="center"
         maxWidth={{
