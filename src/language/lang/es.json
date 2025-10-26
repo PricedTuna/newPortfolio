@@ -11,9 +11,13 @@
     "text3": "Esta página muestra todos los proyectos en los que he trabajado, desde el comienzo de mi trayectoria hasta hoy. ¡Échales un vistazo y dime qué opinas! :p"
   },
   "projects": {
-    "(CONFIDENTIAL) Pear": "Un proyecto confidencial. Esta es una solución de arquitectura de microservicios con aplicaciones móviles, web y de escritorio, aún en desarrollo. Es una solución a nivel internacional.",
-    "(CONFIDENTIAL) Balanza fizcal": "Un proyecto confidencial. Este es un administrador financiero y calculadora de impuestos que funciona en empresas privadas y opera a nivel nacional (México).",
-    "IS time clocker (frontend)": "Una página para registrar el horario de tus empleados, la hora de entrada y salida, con categorías y reportes en Excel.",
+    "Prestamos": "Gestión de prestamos para un grupo interno, tiene una secuencia para gestionar la cantidad que se tiene, se puede prestar, lista de espera y exportaciones a diferentes formatos.",
+    "DocuTalk": "Aplicación de escritorio donde en base a audios genera una documentación limpia sobre un proeycto o solución en formato markdown apoyado por modelos de AI.s",
+    "Evidence processor": "Script de terminal de comandos donde se limpia un video y el audio permitiendo hacerlo manual o automaticamente",
+    "MedicLife": "Sistema de gestión de consultorios, medicos, pacientes, consultas y todo lo necesario para gestionar una serie de consultorios médicos",
+    "Pear": "Un proyecto confidencial. Esta es una solución de arquitectura de microservicios con aplicaciones móviles, web y de escritorio, aún en desarrollo. Es una solución a nivel internacional.",
+    "Balanza fizcal": "Un proyecto confidencial. Este es un administrador financiero y calculadora de impuestos que funciona en empresas privadas y opera a nivel nacional (México).",
+    "IS time clocker (frontend)": "Proeycto de ingeniería en software donde se puede llevar un registro de las horas de trabajo de un empleado, permite importaciones y exportaciones en diferentes formatos ademas de ser super accesibles con un sistema de QR",
     "IS time clocker (backend)": "El backend para 'IS time clocker (frontend)'.",
     "Uas documents": "Una página para simular la digitalización y automatización del proceso de solicitud de documentos en toda la universidad. Puedes registrarte y solicitar los documentos disponibles.",
     "Banchido (frontend)": "Una página para probar 'Banchido', el banco digital de la 'Facultad de Ingeniería' en la UAS. Este es el frontend para todo el proyecto, permitiéndote realizar todas las tareas como en cualquier otro banco digital.",

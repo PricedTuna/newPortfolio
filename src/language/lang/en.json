@@ -12,8 +12,12 @@
     "text3": "This page showcases all the projects I have worked on, from the beginning of my journey to today. Check them out and let me know what you think! :p"
   },
   "projects": {
-    "(CONFIDENTIAL) Pear": "A confidential project. This is a microservices architecture solution with a mobile, web and desktop apps, in development yet, this is an international level solution.",
-    "(CONFIDENTIAL) Balanza fizcal": "A confidential project. This is a finance management and taxes calculator which works in private enterprises and operates at a national level (México).",
+    "Prestamos": "Loan management for an internal group, with flows to track available capital, issue loans, handle waitlists, and export data to multiple formats.",
+    "DocuTalk": "Desktop app that turns audio recordings into clean Markdown documentation for a project or solution, powered by AI models.",
+    "Evidence processor": "Command-line script that cleans video and audio evidence, either manually or automatically.",
+    "MedicLife": "Management platform for clinics, doctors, patients, appointments, and everything required to run several medical offices.",
+    "Pear": "A confidential project. This is a microservices architecture solution with a mobile, web and desktop apps, in development yet, this is an international level solution.",
+    "Balanza fizcal": "A confidential project. This is a finance management and taxes calculator which works in private enterprises and operates at a national level (México).",
     "IS time clocker (frontend)": "A page to register the hourly schedule for your employees, entry hour and out hour with categories and Excel reports.",
     "IS time clocker (backend)": "The backend for 'IS time clocker (frontend)'.",
     "Uas documents": "A page to simulate the digitalization and automation of the process to request documents in the entire university. You can register and request the available documents.",

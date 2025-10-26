@@ -5,6 +5,7 @@ import BaseText from '../components/text/BaseText';
 import { useTranslate } from '../hooks/useTranslate';
 import { useState } from 'react';
 import { ProjectModal } from './components/ProjectModal.tsx';
+import { LanguageLastKeys } from '../language/i18n.ts';
 
 export type TechType =
   | 'Stack web'
@@ -27,14 +28,14 @@ export interface ProjectInterface {
   url?: string;
   mainTech: TechType;
   allTechs: TechType[];
-  description: string;
+  description: LanguageLastKeys;
   isConfidential?: boolean;
 }
 
 const projects: ProjectInterface[] = [
   {
     'title': 'Prestamos',
-    'description': 'Gestión de prestamos para un grupo interno, tiene una secuencia para gestionar la cantidad que se tiene, se puede prestar, lista de espera y exportaciones a diferentes formatos.',
+    'description': 'projects.Prestamos',
     'allTechs': ['Stack web', 'React', 'NoSQL database'],
     'mainTech': 'React',
     'github': '',
@@ -43,7 +44,7 @@ const projects: ProjectInterface[] = [
   },
   {
     'title': 'DocuTalk',
-    'description': 'Aplicación de escritorio donde en base a audios genera una documentación limpia sobre un proeycto o solución en formato markdown apoyado por modelos de AI.s',
+    'description': 'projects.DocuTalk',
     'allTechs': ['Python'],
     'mainTech': 'Python',
     'github': 'https://github.com/PricedTuna/docuTalk',
@@ -51,7 +52,7 @@ const projects: ProjectInterface[] = [
   },
   {
     'title': 'Evidence processor',
-    'description': 'Script de terminal de comandos donde se limpia un video y el audio permitiendo hacerlo manual o automaticamente',
+    'description': 'projects.Evidence processor',
     'allTechs': ['Python'],
     'mainTech': 'Python',
     'github': 'https://github.com/PricedTuna/evidence_processor',
@@ -59,7 +60,7 @@ const projects: ProjectInterface[] = [
   },
   {
     'title': 'MedicLife',
-    'description': 'Sistema de gestión de consultorios, medicos, pacientes, consultas y todo lo necesario para gestionar una serie de consultorios médicos',
+    'description': 'projects.MedicLife',
     'allTechs': ['Stack web', 'NestJs', 'PHP'],
     'mainTech': 'PHP',
     'github': 'https://github.com/PricedTuna/newMedicLife',
@@ -67,7 +68,7 @@ const projects: ProjectInterface[] = [
   },
   {
     'title': 'Pear',
-    'description': 'Solución internacional y fuerte',
+    'description': 'projects.Pear',
     'allTechs': ['Stack web', 'React', 'React Native', 'SQL database', 'Microservices', 'NestJs'],
     'mainTech': 'Microservices',
     'github': '',
@@ -76,7 +77,7 @@ const projects: ProjectInterface[] = [
   },
   {
     'title': 'Balanza fizcal',
-    'description': 'Balanza fizcal',
+    'description': 'projects.Balanza fizcal',
     'allTechs': ['Stack web', 'React', 'TypeScript'],
     'mainTech': 'React',
     'github': '',
@@ -85,7 +86,7 @@ const projects: ProjectInterface[] = [
   },
   {
     'title': 'IS time clocker (frontend)',
-    'description': 'Proeycto de ingeniería en software donde se puede llevar un registro de las horas de trabajo de un empleado, permite importaciones y exportaciones en diferentes formatos ademas de ser super accesibles con un sistema de QR',
+    'description': 'projects.IS time clocker (frontend)',
     'allTechs': ['React', 'TypeScript', 'Stack web'],
     'mainTech': 'React',
     'github': 'https://github.com/PricedTuna/isfront',
@@ -93,7 +94,7 @@ const projects: ProjectInterface[] = [
   },
   {
     'title': 'IS time clocker (backend)',
-    'description': 'Proeycto de ingeniería en software donde se puede llevar un registro de las horas de trabajo de un empleado, permite importaciones y exportaciones en diferentes formatos ademas de ser super accesibles con un sistema de QR',
+    'description': 'projects.IS time clocker (backend)',
     'allTechs': ['NestJs', 'TypeScript', 'SQL database'],
     'mainTech': 'NestJs',
     'github': 'https://github.com/PricedTuna/rrhhback',
@@ -101,7 +102,7 @@ const projects: ProjectInterface[] = [
   },
   {
     'title': 'Uas documents',
-    'description': 'Uas documents',
+    'description': 'projects.Uas documents',
     'allTechs': ['Stack web', 'TypeScript', 'React', 'NoSQL database'],
     'mainTech': 'React',
     'github': 'https://github.com/PricedTuna/milipage',
@@ -109,7 +110,7 @@ const projects: ProjectInterface[] = [
   },
   {
     'title': 'Banchido (frontend)',
-    'description': 'Banchido (frontend)',
+    'description': 'projects.Banchido (frontend)',
     'allTechs': ['Stack web', 'TypeScript', 'React'],
     'mainTech': 'React',
     'github': 'https://github.com/PricedTuna/banchido',
@@ -117,7 +118,7 @@ const projects: ProjectInterface[] = [
   },
   {
     'title': 'Banchido (backend)',
-    'description': 'Banchido (backend)',
+    'description': 'projects.Banchido (backend)',
     'allTechs': ['NestJs', 'NoSQL database', 'TypeScript'],
     'mainTech': 'NestJs',
     'github': 'https://github.com/PricedTuna/banChidoBack',
@@ -125,71 +126,39 @@ const projects: ProjectInterface[] = [
   },
   {
     'title': 'Financeculator',
-    'description': 'Financeculator',
+    'description': 'projects.Financeculator',
     'allTechs': ['Stack web', 'TypeScript', 'React'],
     'mainTech': 'React',
     'github': 'https://github.com/PricedTuna/CalcIngFinanciera',
     'url': 'https://financeculator.netlify.app/'
   },
   {
-    'title': 'Weathere cite',
-    'description': 'Weathere cite',
-    'allTechs': ['Stack web'],
-    'mainTech': 'Stack web',
-    'github': 'https://github.com/PricedTuna/werather_cite',
-    'url': 'https://animated-narwhal-dc6704.netlify.app/'
-  },
-  {
-    'title': 'Movie land',
-    'description': 'Movie land',
-    'allTechs': ['Stack web', 'TypeScript'],
-    'mainTech': 'TypeScript',
-    'github': 'https://github.com/PricedTuna/MovieLand',
-    'url': 'https://fluffy-cactus-f13494.netlify.app/'
-  },
-  {
     'title': 'Inguntos',
-    'description': 'Inguntos',
+    'description': 'projects.Inguntos',
     'allTechs': ['Stack web'],
     'mainTech': 'Stack web',
     'github': 'https://github.com/PricedTuna/conjuntosOperations',
     'url': 'https://inguntos.netlify.app/'
   },
   {
-    'title': 'ToDoList (local storage)',
-    'description': 'ToDoList (local storage)',
-    'allTechs': ['Stack web', 'TypeScript', 'Bootstrap'],
+    'title': 'Movie land',
+    'description': 'projects.Movie land',
+    'allTechs': ['Stack web', 'TypeScript'],
     'mainTech': 'TypeScript',
-    'github': 'https://github.com/PricedTuna/ToDoListWeb',
-    'url': 'https://local-todo-storaged.netlify.app/'
+    'github': 'https://github.com/PricedTuna/MovieLand',
+    'url': 'https://fluffy-cactus-f13494.netlify.app/'
   },
   {
-    'title': 'ToDoList (cache)',
-    'description': 'ToDoList (cache)',
-    'allTechs': ['Stack web', 'Bootstrap'],
+    'title': 'Weathere cite',
+    'description': 'projects.Weathere cite',
+    'allTechs': ['Stack web'],
     'mainTech': 'Stack web',
-    'github': 'https://github.com/PricedTuna',
-    'url': 'https://only-simple-todo.netlify.app/'
-  },
-  {
-    'title': 'frontend-mentor QR',
-    'description': 'frontend-mentor QR',
-    'allTechs': ['Stack web', 'Bootstrap'],
-    'mainTech': 'Stack web',
-    'github': 'https://github.com/PricedTuna',
-    'url': 'https://bright-rugelach-5f4838.netlify.app/'
-  },
-  {
-    'title': 'frontend-mentor Product card',
-    'description': 'frontend-mentor Product card',
-    'allTechs': ['Stack web', 'Bootstrap'],
-    'mainTech': 'Stack web',
-    'github': 'https://github.com/PricedTuna',
-    'url': 'https://gregarious-selkie-0539ad.netlify.app/'
+    'github': 'https://github.com/PricedTuna/werather_cite',
+    'url': 'https://animated-narwhal-dc6704.netlify.app/'
   },
   {
     'title': 'Alura barber page',
-    'description': 'Alura barber page',
+    'description': 'projects.Alura barber page',
     'allTechs': ['Stack web'],
     'mainTech': 'Stack web',
     'github': 'https://github.com/PricedTuna/Alura-barber',
