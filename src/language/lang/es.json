@@ -6,11 +6,12 @@
     "Projects": "Proyectos"
   },
   "about": {
-    "text1": "Amo tres cosas en este mundo: el cine de animación, los juegos de Pokémon y resolver problemas.",
-    "text2": "Soy Edgar Vega, un ingeniero de software mexicano. Comencé mi carrera a los 15 años, aprendiendo algoritmos. Ahora soy un desarrollador de software full-stack, especializado en desarrollo web y móvil con React y React Native en el front-end, y NestJS y C# en el back-end.",
-    "text3": "Esta página muestra todos los proyectos en los que he trabajado, desde el comienzo de mi trayectoria hasta hoy. ¡Échales un vistazo y dime qué opinas! :p"
+    "text1": "Amo tres cosas en este mundo: el cine de animación, los animales marinos y resolver problemas.",
+    "text2": "Soy Edgar Vega, un ingeniero de software mexicano. Comencé mi carrera a los 15 años, aprendiendo algoritmos. Ahora soy un desarrollador de software full-stack, especializado en desarrollo web con React en el front-end y NestJS en el back-end, tanto con bases de datos SQL como NoSQL.",
+    "text3": "Esta página muestra todos los proyectos en los que he trabajado, desde el comienzo de mi trayectoria hasta hoy. ¡Échales un vistazo y dime qué opinas!"
   },
   "projects": {
+    "EcoSend": "Construído en un hackatón de 24h, este proyecto resuelve toda la logísitica de envíos de paquetería, con un enfoque en la sostenibilidad y reducción de la huella de carbono. Este prototipo es completo y usable, permitiendo a negocios gestionar sus repartidores internos o abrir sus envíos a repartidores externos que buscan rutas cercanas para optimizar sus viajes y reducir emisiones.",
     "Prestamos": "Gestión de prestamos para un grupo interno, tiene una secuencia para gestionar la cantidad que se tiene, se puede prestar, lista de espera y exportaciones a diferentes formatos.",
     "DocuTalk": "Aplicación de escritorio donde en base a audios genera una documentación limpia sobre un proeycto o solución en formato markdown apoyado por modelos de AI.s",
     "Evidence processor": "Script de terminal de comandos donde se limpia un video y el audio permitiendo hacerlo manual o automaticamente",

@@ -3,15 +3,15 @@
   "sections": {
     "AboutMe": "About Me",
     "Skills": "Skills",
-    "Projects": "Projects",
-    "Contact": "Contact"
+    "Projects": "Projects"
   },
   "about": {
-    "text1": "I love three things in this world: animated film, Pokémon games, and solving problems.",
-    "text2": "I'm Edgar Vega, a Mexican software engineer. I started my career at 15, learning algorithms. Now, I am a full-stack software developer, specializing in web and mobile development with React and React Native on the front end, and NestJS and C# on the back end.",
-    "text3": "This page showcases all the projects I have worked on, from the beginning of my journey to today. Check them out and let me know what you think! :p"
+    "text1": "I love three things in this world: animated films, marine animals, and solving problems.",
+    "text2": "I'm Edgar Vega, a Mexican software engineer. I began my career at 15, learning algorithms. Today, I’m a full-stack software developer specializing in web development with React on the front end and NestJS on the back end, working with both SQL and NoSQL databases.",
+    "text3": "This page showcases all the projects I`ve worked on, from the beginning of my journey to today. Take a look and let me know what you think!"
   },
   "projects": {
+    "EcoSend": "Built during a 24-hour hackathon, this project solves the entire logistics process of parcel deliveries with a focus on sustainability and carbon footprint reduction. This prototype is fully functional and user-ready, allowing businesses to manage their internal couriers or open their deliveries to external drivers seeking nearby routes to optimize their trips and reduce emissions.",
     "Prestamos": "Loan management for an internal group, with flows to track available capital, issue loans, handle waitlists, and export data to multiple formats.",
     "DocuTalk": "Desktop app that turns audio recordings into clean Markdown documentation for a project or solution, powered by AI models.",
     "Evidence processor": "Command-line script that cleans video and audio evidence, either manually or automatically.",

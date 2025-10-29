@@ -15,26 +15,6 @@ interface category {
 
 const skillsCategorys: category[] = [
   {
-    name: "Backend",
-    skills: [
-      {
-        title: "NestJs",
-      },
-      {
-        title: "C#",
-      },
-      {
-        title: ".NET",
-      },
-      {
-        title: "Keycloak",
-      },
-      {
-        title: "TypeScript",
-      },
-    ],
-  },
-  {
     name: "Frontend",
     skills: [
       {
@@ -64,6 +44,20 @@ const skillsCategorys: category[] = [
     ],
   },
   {
+    name: "Backend",
+    skills: [
+      {
+        title: "NestJs",
+      },
+      {
+        title: "Keycloak",
+      },
+      {
+        title: "Express",
+      },
+    ],
+  },
+  {
     name: "Databases",
     skills: [
       {
@@ -82,6 +76,10 @@ const skillsCategorys: category[] = [
         title: "SqlServer",
       },
     ],
+  },
+  {
+    name: "Extra",
+    skills: [{ title: "Docker" }, { title: "Figma" }, { title: "UML" }],
   },
 ];
 

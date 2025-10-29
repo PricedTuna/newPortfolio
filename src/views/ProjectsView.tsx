@@ -34,6 +34,14 @@ export interface ProjectInterface {
 
 const projects: ProjectInterface[] = [
   {
+    title: "EcoSend",
+    description: "projects.EcoSend",
+    allTechs: ["Stack web", "React", "TypeScript", "NoSQL database"],
+    mainTech: "React",
+    github: "https://github.com/YewdielMartinez/ecoflow-losmochis",
+    url: "https://ecoflow-losmochis.vercel.app"
+  },
+  {
     title: "Prestamos",
     description: "projects.Prestamos",
     allTechs: ["Stack web", "React", "NoSQL database"],
